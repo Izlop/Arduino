@@ -1,0 +1,11 @@
+#define led 13 (esto no se escribe;puede ser cualquier puerto:8,9,10,11,12,13.)
+void setup(){
+pinMode(led,OUTPUT);
+}
+
+void loop(){
+digital.write(led,HIGH);
+delay(1000)
+digital.write(led,LOW);
+delay(1000);
+}
