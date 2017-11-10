@@ -12,22 +12,22 @@ void setup() {
   //Encender la luz de fondo.
   lcd.backlight();
   // Escribimos el Mensaje en el LCD.
-  lcd.print("Awilly rex le ");
+  lcd.print("hola ");
 }
 
 void loop(){
   
    lcd.setCursor(0, 1);
-  lcd.print("nn");
+  lcd.print("Hola");
   delay(10000);
    for(int acumulador=1; acumulador<=10 ; acumulador++){
     lcd.setCursor(0, 1);
-   lcd.print("nns");
+   lcd.print("Joooo");
    delay(10000);
   for(int acumulador=1; acumulador<=10; acumulador++){
      lcd.setCursor(0, 1);
      lcd.print(millis()/10);
-    lcd.print("Asterisco");
+    lcd.print("Adios");
     delay(10000);
   }
   }
