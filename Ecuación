@@ -1,0 +1,40 @@
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+//Crear el objeto lcd  dirección  0x27 y 16 columnas x 2 filas
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+
+void setup() {
+  // Inicializar el LCD
+  lcd.begin();
+
+  //Encender la luz de fondo.
+  lcd.backlight();
+  // Escribimos el Mensaje en el LCD.
+  lcd.print("8+2=5x");
+}
+
+void loop() {
+
+  lcd.setCursor(0, 1);
+  lcd.print("ej Mates");
+  delay(5000);
+  for (int acumulador = 1; acumulador <= 10 ; acumulador++) {
+    lcd.setCursor(0, 1);
+    lcd.print("10=5x");
+    delay(10000);
+  for (int acumulador = 1; acumulador <= 10 ; acumulador++) {
+    lcd.setCursor(0, 1);
+    lcd.print(millis()/10);
+    lcd.print("x=10/5");
+    delay(10000);
+    for (int acumulador = 1; acumulador <= 10; acumulador++) {
+      lcd.setCursor(0, 1);
+      lcd.print(millis() / 10);
+      lcd.print("x=2");
+      delay(10000);
+      }
+    }
+  }
+}
