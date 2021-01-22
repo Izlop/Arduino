@@ -4,8 +4,8 @@ pinMode(led,OUTPUT);
 }
 
 void loop(){
-digital.write(led,HIGH);
+digitalWrite(led,HIGH);
 delay(1000)
-digital.write(led,LOW);
+digitalWrite(led,LOW);
 delay(1000);
 }
